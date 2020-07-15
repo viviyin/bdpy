@@ -1,0 +1,8 @@
+graph {
+	ucom
+	"G-Jun"
+	"Da-Ya"
+	ucom -- "G-Jun"
+	ucom -- "Da-Ya"
+	"G-Jun" -- "Da-Ya"
+}

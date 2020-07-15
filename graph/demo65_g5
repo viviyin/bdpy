@@ -1,0 +1,13 @@
+digraph {
+	graph [bgcolor="#C0FFEE" fontcolor="#448800" fontsize=24 label="computer school" rankdir=LR]
+	node [color=red fillcolor="#FFC0EE" fontname="Microsoft YaHei Normal" shape=rectangle style=filled]
+	edge [arrowhead=open color="#002288" fontname="Microsoft YaHei Normal" fontsize=24 penwidth=7 style=dotted]
+	A [label=ucom]
+	B [label="巨將"]
+	C [label=DaYa]
+	D
+	A -> B [label="head quarter in Taipei"]
+	A -> C [label="multimedia is hot"]
+	B -> C [label="競爭對手"]
+	B -> D
+}

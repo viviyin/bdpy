@@ -1,0 +1,10 @@
+digraph {
+	A [label=ucom]
+	B [label="巨將"]
+	C [label=DaYa]
+	D
+	A -> B [label="head quarter in Taipei"]
+	A -> C [label="multimedia is hot"]
+	B -> C [label="競爭對手"]
+	B -> D
+}

@@ -1,0 +1,18 @@
+graph {
+	Apple
+	Banana
+	Citron
+	Kiwi
+	Apple -- Banana
+	Apple -- Citron
+	Apple -- Kiwi
+	Banana -- Apple
+	Banana -- Citron
+	Banana -- Kiwi
+	Citron -- Apple
+	Citron -- Banana
+	Citron -- Kiwi
+	Kiwi -- Apple
+	Kiwi -- Banana
+	Kiwi -- Citron
+}
