@@ -1,0 +1,36 @@
+import pandas as pd
+import numpy as np
+
+df1 = pd.DataFrame(np.random.randn(6, 7),
+                   index=list(range(0, 12, 2)),
+                   columns=list(range(0, 7, 1)))
+print(df1)
+print("horizontal slice")
+print(df1[:3])
+print(df1.iloc[:2])
+print("vertical slice")
+print(df1.iloc[:, :3])
+print(df1.iloc[:, 3:])
+print("crop a region")
+print(df1.iloc[1:3, 2:4])
+print(f"sum by each column:{df1.sum()}")
+print(f"sum by each row:\n{df1.sum(axis='columns')}")
+df1.iloc[2, 3] = np.NaN
+print(df1)
+print(f"sum with missing value\n:{df1.sum()}")
+print(f"sum with missing value for  each row:\n{df1.sum(axis='columns')}")
+print(f"sum not ignore missing value:{df1.sum(skipna=False)}")
+print(f"sum not ignore  missing value for  each row:\n{df1.sum(skipna=False, axis='columns')}")
+print("find max index")
+print(f"find the max element:\n{df1.idxmax()}")
+print("find minimum index")
+print(f"find the max element:\n{df1.idxmin()}")
+print("by columns")
+print("find max index")
+print(f"find the max element:\n{df1.idxmax(axis='columns')}")
+print("find minimum index")
+print(f"find the max element:\n{df1.idxmin(axis='columns')}")
+print("summation")
+print(df1.cumsum())
+print(df1.cummax())
+print(df1.describe())
